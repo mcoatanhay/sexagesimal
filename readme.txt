@@ -26,8 +26,17 @@ CLASSES
      |  __mul__(self, terme)
      |      Multiplie un terme Sexag par un nombre.
      |  
+     |  __neg__(self)
+     |      Calcule l'opposé d'un terme Sexag.
+     |  
      |  __repr__(self)
      |      Affichage d'un terme Sexag.
+     |  
+     |  __rmul__(self, terme2)
+     |      Multiplication à gauche d'un terme Sexag.
+     |  
+     |  __truediv__(self, terme2)
+     |      Division de deux termes Sexag.
      |  
      |  ----------------------------------------------------------------------
      |  Data descriptors defined here:
@@ -46,7 +55,7 @@ FUNCTIONS
         transforme un terme au format sexagésimal
 
 DATA
-    signes = {-1: '-', 1: '+'}
+    signes = {-1: '-', 1: ' '}
 
 FILE
     c:\users\mc\mu_code\_mes_modules\sexagesimal\sexag.py
